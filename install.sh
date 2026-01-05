@@ -14,7 +14,7 @@ NC='\033[0m' # No Color
 
 # Configuration
 APP_NAME="securechat"
-APP_DIR="/opt/chatroom"
+APP_DIR="/opt/chatroomss"
 SERVICE_USER="securechat"
 SERVICE_PORT="3000"
 NGINX_AVAILABLE="/etc/nginx/sites-available"
@@ -98,7 +98,7 @@ echo ""
 echo -e "${BLUE}🔐 Master Password Configuration${NC}"
 echo -e "${BLUE}===============================${NC}"
 echo ""
-echo -e "${YELLOW}The master password allows public access to the chatroom.${NC}"
+echo -e "${YELLOW}The master password allows public access to the chatrooms.${NC}"
 echo -e "${YELLOW}Users will need this password to join the general chat.${NC}"
 echo ""
 
@@ -153,7 +153,7 @@ done
 echo -e "${YELLOW}⚙️  Creating systemd service...${NC}"
 sudo tee /etc/systemd/system/$APP_NAME.service > /dev/null <<EOF
 [Unit]
-Description=SecureChat - Secure Local Chatroom
+Description=SecureChat - Secure Local chatrooms
 Documentation=https://github.com/securechat
 After=network.target
 
