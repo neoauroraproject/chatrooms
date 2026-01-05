@@ -14,7 +14,7 @@ NC='\033[0m' # No Color
 
 # Configuration
 APP_NAME="securechat"
-APP_DIR="/opt/chatroomss"
+APP_DIR="/opt/chatrooms"
 SERVICE_USER="securechat"
 SERVICE_PORT="3000"
 NGINX_AVAILABLE="/etc/nginx/sites-available"
