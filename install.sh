@@ -73,7 +73,11 @@ $SUDO apt install -y curl wget gnupg2 software-properties-common nginx ufw ca-ce
 # ===============================
 if ! command -v node &>/dev/null; then
   echo -e "${YELLOW}📦 Installing Node.js 18.x...${NC}"
-  curl -fsSL https://deb.nodesource.com/setup_18.x | $SUDO -E bash -
+  if [[ "$EUID" -eq 0 ]]; then
+  curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+else
+  curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+fi
   $SUDO apt install -y nodejs
 fi
 
