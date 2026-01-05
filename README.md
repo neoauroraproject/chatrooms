@@ -47,10 +47,10 @@ A beautiful, secure, and feature-rich local chatroom application built with Reac
 
 ```bash
 # Download and run the installation script
-curl -fsSL https://raw.githubusercontent.com/your-repo/securechat/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/neoauroraproject/chatrooms/main/install.sh | bash
 
 # Or download first and review
-wget https://raw.githubusercontent.com/your-repo/securechat/main/install.sh
+wget https://raw.githubusercontent.com/neoauroraproject/chatrooms/main/install.sh
 chmod +x install.sh
 ./install.sh
 ```
@@ -59,7 +59,7 @@ chmod +x install.sh
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/securechat.git
+git clone https://github.com/neoauroraproject/chatrooms.git
 cd securechat
 
 # Install dependencies
@@ -220,7 +220,7 @@ sudo nginx -t
 **Permission issues:**
 ```bash
 # Fix file permissions
-sudo chown -R securechat:securechat /opt/securechat
+sudo chown -R chatrooms:chatrooms /opt/chatrooms
 ```
 
 ## 🤝 Contributing
